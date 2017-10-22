@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../jquery.min.js"></script>
+		<script src="../jquery.cookie.js"></script>
+		<script src="calorie.js"></script>
+		<script src="script.js"></script>
+		<script type="text/javascript" src="nlb/nutritionLabel-min.js"></script>
+		<style>@import "style.css"</style>
+	</head>
+	<body>
+		<div id="setup" class="page">
+			<div class="wrapper">
+				<div class="title">Welcome</div>
+				<div class="subtitle">Please complete the following</div>
+				<label>
+					<select id="age">
+						<option value="0">9 to 13</option>
+						<option value="1">14 to 18</option>
+						<option value="2">19 to 30</option>
+						<option value="3">31 to 50</option>
+						<option value="4">51+</option>
+					</select>
+				</label><br>
+				<label>
+					<select id="gender">
+						<option value="0">Male</option>
+						<option value="1">Female</option>
+					</select>
+				</label><br>
+				<label>
+					<select id="activity_level">
+						<option value="0">I spend most of my time in the office.</option>
+						<option value="1">I do moderate physical activity.</option>
+						<option value="2">I do vigorous physical activity.</option>
+					</select>
+				</label><br><br>
+				<label>Weight loss mode <input id="weight_loss_mode" type="checkbox"/></label><br>
+				<label>Have heart disease <input id="has_heart_disease" type="checkbox"/></label><br>
+			</div>
+			<img src="images/chevron.png" id="finish_setup" onclick="complete_setup()">
+		</div>
+		<div id="search" class="page">
+			<div class="wrapper">
+				<input id="searchbar" placeholder="Search a food" autocomplete="off" autocorrect="off" spellcheck="false"/>
+			</div>
+		</div>
+		<div id="options" class="page">
+			<div class="wrapper">
+				<div class="query"></div>
+				<table class="results"></table>
+			</div>
+		</div>
+		<div id="info_board" class="page">
+				<table class="nutrition_table">
+					<tr>
+						<td>Parameter</td>
+						<td>Your true daily allotment</td>
+					</tr>
+				</table>
+				<div class="wrapper">
+					<div class="title">Calorie allotment</div>
+					<div class="image battery"></div>
+					<div class="status battery">Good</div>
+				</div>
+				<div class="wrapper">
+					<div class="title">Unsaturated fat allotment</div>
+					<div class="image ufat"></div>
+					<div class="status ufat">Good</div>
+				</div>
+				<div class="wrapper">
+					<div class="title">Saturated fat allotment</div>
+					<div class="image sfat"></div>
+					<div class="status sfat">Good</div>
+				</div>
+				<div class="wrapper">
+					<div class="title">Trans fat allotment</div>
+					<div class="image tfat"></div>
+					<div class="status tfat">Good</div>
+				</div>
+				<div class="wrapper">
+					<div class="title">Cholestorol allotment</div>
+					<div class="image cholestorol"></div>
+					<div class="status cholestorol">Good</div>
+				</div>
+				<div class="wrapper">
+					<div class="title">Sodium allotment</div>
+					<div class="image sodium"></div>
+					<div class="status sodium">Good</div>
+				</div>
+				<div class="wrapper">
+					<div class="title">Fiber allotment</div>
+					<div class="image fiber"></div>
+					<div class="status fiber">Good</div>
+				</div>
+				<div class="wrapper">
+					<div class="title">Fiber allotment</div>
+					<div class="image sugar"></div>
+					<div class="status sugar">Good</div>
+				</div>
+				<div class="wrapper">
+					<div class="title">Fiber allotment</div>
+					<div class="image protein"></div>
+					<div class="status protein">Good</div>
+				</div>
+		</div>
+	</body>
+</html>

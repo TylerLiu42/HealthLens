@@ -1,0 +1,194 @@
+html,body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+	font: 15px Helvetica, sans-serif;
+	font-weight: 200;
+	background-color: #eee;
+}
+
+/*	Input	*/
+
+select
+{
+    background: #ccc;
+    background-repeat: no-repeat;
+    background-position: calc(100% + 2px) center;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 40px;
+    height: 30px;
+    margin: 2.5px 0;
+    font-size: 13px;
+    outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#searchbar {
+	background: #ccc;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 15px;
+    outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/*	pages	*/
+
+.page {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+.page .wrapper, .search .wrapper, #options .wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	text-align: center;
+}
+
+/*	Setup	*/
+
+#setup .title {
+	padding-bottom: 15px;
+	font-weight: 200;
+	font-size: 35px;
+}
+
+#setup .subtitle {
+	color: #555;
+	padding-bottom: 35px;
+}
+
+#setup select {
+	width: 80%;
+}
+
+#finish_setup {
+	width: 50px;
+	position: absolute;
+	bottom: 10px;
+	left: calc(50% - 25px);
+	padding-top: 50px;
+}
+
+/*	search	*/
+
+/*	Options	*/
+#options .query {
+	font-size: 30px;
+}
+
+#options .results {
+	width: calc(100% - 30px);
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 0px auto;
+	margin-top: 25px;
+	max-width: 500px;
+}
+
+#options .results td{
+	padding: 10px 0;
+}
+
+#options .results tr:not(:last-child) td{
+	border-bottom: solid #777 1px;
+}
+
+#options .results tr td:first-child {
+	width: 40px;
+}
+
+#options .results tr td:nth-child(2) {
+	text-align: left;
+	padding-left: 15px;
+}
+
+.thumb {
+	height: 30px;
+	max-width: 30px;
+}
+
+#options .quant, #options .brand_name {
+	color: #aaa;
+	font-size: 15px;
+}
+
+#options .brand_name {
+	font-size: 10px;
+}
+
+/*	Info board	*/
+
+#info_board .nutrition_table {
+	height: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#info_board .nutrition_table td {
+	background-color: white;
+	height: auto;
+	vertical-align: top;
+	font-size: 15px;
+	padding: 5px 20px 5px 10px;
+}
+
+#info_board .nutrition_table td:first-child {
+	font-weight: 600;
+}
+
+
+#info_board .nutrition_table tr:not(:last-child) td {
+	height: 20px;
+}
+
+.nutrition_table tr:first-child td {
+	padding-bottom: 25px;
+	border-bottom: solid black 3px;
+}
+
+/*	Graphics	*/
+
+#info_board .wrapper {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 20px 0 20px 0;
+	display: block;
+	border-bottom: solid #ccc 1px;
+}
+
+#info_board .wrapper .image {
+	height: 200px;
+	margin: 15px 0;
+}
+
+.image  {
+	background-image: url("images/battery.png"), -webkit-linear-gradient(#f9d939, #d1b630);
+	background-size: 200px 100%, 100px 165px;
+	background-repeat: no-repeat;
+	background-position: center bottom, center calc(100% - 9px);
+}
